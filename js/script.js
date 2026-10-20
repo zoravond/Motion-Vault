@@ -43,8 +43,14 @@
           ${LINKS.map(([h, t, cta]) =>
             `<a href="${h}" class="${h === current ? "active" : ""} ${cta ? "nav-cta" : ""}">${t}</a>`).join("")}
         </nav>
+        <button class="theme-btn" id="themeBtn" aria-label="Ganti tema terang/gelap" title="Ganti tema"><svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg><svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
         <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>`;
+    header.querySelector("#themeBtn").addEventListener("click", () => {
+      const next = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("mv-theme", next); } catch (e) {}
+    });
     const burger = header.querySelector("#burger");
     const nav = header.querySelector("#navLinks");
     burger.addEventListener("click", () => {
