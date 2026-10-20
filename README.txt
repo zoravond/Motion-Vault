@@ -18,7 +18,7 @@ STRUKTUR FOLDER:
   bedah-mosi.html     -> Artikel bedah mosi (accordion)
   dokumentasi.html    -> Galeri foto/video
   kontak.html         -> Sosmed, WhatsApp & form pesan WA
-  css/style.css       -> Semua gaya (warna merah-hitam F1)
+  css/style.css       -> Semua gaya. Tema GELAP (mahogany-crimson) & TERANG (palet biru Deep Blue)
   js/data.js          -> << EDIT DI SINI: semua konten >>
   js/script.js        -> Jangan perlu diubah (logika website)
 
@@ -37,3 +37,9 @@ Link Google Drive:
 - Pastikan izin file Drive di-set "Siapa saja yang memiliki link".
 - Bank mosi & dokumentasi: tinggal ganti teks "#ganti-link-drive-..." 
   di js/data.js dengan link asli.
+
+TEMA TERANG / GELAP:
+- Ada tombol matahari/bulan di navbar. Pilihan pengunjung tersimpan otomatis,
+  dan default mengikuti pengaturan HP/laptop mereka.
+- Warna kedua tema ada di bagian atas css/style.css (cari: TEMA: dark & light).
+  Light: Deep Blue #2A4D88, Concerto #D9D9D8, Glacial Salt #B1BBC8, Ocean City #7C94B8.
