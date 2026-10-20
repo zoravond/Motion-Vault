@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Galeri | Motion Vault IDEATEST</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="style.css"></head>
-<body><div id="nav"></div><main>
-<section class="sec"><div class="wrap"><h1 class="title reveal">Galeri Kegiatan</h1><div class="rule"></div>
-<p class="muted mb-6">Klik foto atau video untuk melihat tampilan penuh.</p><div id="galleryGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div></div></section>
-</main><div id="footer"></div><script src="main.js"></script></body></html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dokumentasi — Motion Vault | IDEATEST</title>
+<meta name="description" content="Dokumentasi foto dan video ekskul debat IDEATEST">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23240000'/%3E%3Crect x='10' y='4' width='9' height='24' fill='%23AD2831' transform='skewX(-14 4)'/%3E%3C/svg%3E">
+</head>
+<body>
+<header id="site-header"></header>
+
+<section class="page-hero">
+  <div class="bg-word">Gallery</div>
+  <div class="container">
+    <span class="section-tag">// Kenang-Kenangan</span>
+    <h1>Dokumen<span style="color:var(--red-hot)">tasi</span></h1>
+    <p>Momen-momen terbaik IDEATEST — latihan, kompetisi, dan kebersamaan yang tertangkap kamera.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-3" id="mv-gallery"></div>
+    <div class="howto reveal">
+      <h4>✏️ Cara Mengganti Foto & Video</h4>
+      <ol>
+        <li>Buka <code>js/data.js</code>, cari bagian <code>dokumentasi</code>.</li>
+        <li>Upload foto/video ke Google Drive (akses "siapa saja yang punya link"), salin link-nya.</li>
+        <li>Ganti <code>judul</code>, <code>jenis</code> ("Foto"/"Video"), <code>tahun</code>, dan <code>link</code>.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2>Arsip Lengkap Ada di Drive</h2>
+      <p>Folder Google Drive pusat berisi seluruh dokumentasi IDEATEST dalam kualitas asli.</p>
+      <a href="#ganti-link-folder-drive" target="_blank" rel="noopener" class="btn btn-ghost" style="color:#fff">Buka Folder Drive
+        <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

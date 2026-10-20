@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Mosi — Motion Vault | IDEATEST</title>
+<meta name="description" content="Kumpulan mosi (motion) ekskul debat IDEATEST">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23240000'/%3E%3Crect x='10' y='4' width='9' height='24' fill='%23AD2831' transform='skewX(-14 4)'/%3E%3C/svg%3E">
+</head>
+<body>
+<header id="site-header"></header>
+
+<section class="page-hero">
+  <div class="bg-word">Mosi</div>
+  <div class="container">
+    <span class="section-tag">// Arsip Mosi</span>
+    <h1>Bank <span style="color:var(--red-hot)">Mosi</span></h1>
+    <p>Kumpulan mosi yang telah dikumpulkan IDEATEST — siap dipakai latihan, sparring, maupun kompetisi.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <input id="mv-bank-search" class="search-input" type="search" placeholder="Cari mosi... (contoh: energi, AI, hukuman)" aria-label="Cari mosi">
+    <div class="chips" id="mv-bank-chips"></div>
+    <div class="grid grid-3" id="mv-bank"></div>
+    <div class="howto reveal">
+      <h4>✏️ Cara Menambah / Mengubah Mosi</h4>
+      <ol>
+        <li>Buka <code>js/data.js</code>, cari bagian <code>bankMosi</code>.</li>
+        <li>Salin satu blok <code>{ ... }</code>, tempel di bawah item terakhir (jangan lupa koma).</li>
+        <li>Isi teks mosi, kategori, tingkat, dan link Google Drive file/folder mosi tersebut.</li>
+        <li>Kategori baru otomatis muncul sebagai tombol filter di atas.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,19 +1,159 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Beranda | Motion Vault IDEATEST</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="style.css"></head>
-<body><div id="nav"></div><main>
-<section class="hero"><div class="wrap reveal"><h1>MOTION VAULT</h1><div class="rule mx-auto"></div>
-<p class="text-xl md:text-2xl muted mb-8">Hub Digital Resmi Ekskul Debat IDEATEST SMAN 62 Jakarta</p>
-<a href="vault.html" class="btn">Buka Bank Mosi</a> <a href="edukasi.html" class="btn alt ml-2">Belajar Debat</a></div></section>
-<section class="sec"><div class="wrap grid md:grid-cols-2 gap-6">
-<div class="card p-7 reveal"><h2 class="title">Apa itu Debat?</h2><p class="muted">Debat adalah seni berargumen secara logis dan berbasis data. Dua sisi mempertahankan posisi atas sebuah mosi, lalu saling menguji alasan dan bukti di depan juri, bukan untuk saling menjatuhkan, tetapi untuk mencari argumen terbaik.</p></div>
-<div class="card p-7 reveal"><h2 class="title">Apa itu IDEATEST?</h2><p class="muted">IDEATEST adalah ekstrakurikuler debat SMAN 62 Jakarta. Wadah bagi siswa untuk melatih berpikir kritis, berbicara di depan umum, dan berargumen sehat lewat latihan rutin dan perlombaan.</p></div></div></section>
-<section class="sec pt-0"><div class="wrap"><h2 class="title reveal">Akses Cepat</h2><div class="rule"></div><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-<a href="edukasi.html" class="card p-6 reveal block"><h3 class="text-2xl font-bold accent">Edukasi</h3><p class="muted text-sm">Metode A.R.E.L dan peran pembicara AP Format.</p></a>
-<a href="vault.html" class="card p-6 reveal block"><h3 class="text-2xl font-bold accent">Bank Mosi</h3><p class="muted text-sm">Cari mosi dan baca bedah analisisnya.</p></a>
-<a href="dokumentasi.html" class="card p-6 reveal block"><h3 class="text-2xl font-bold accent">Galeri</h3><p class="muted text-sm">Foto dan video kegiatan IDEATEST.</p></a>
-<a href="pengurus.html" class="card p-6 reveal block"><h3 class="text-2xl font-bold accent">Pengurus</h3><p class="muted text-sm">Struktur kepengurusan 2026/2027.</p></a></div></div></section>
-</main><div id="footer"></div><script src="main.js"></script></body></html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beranda — Motion Vault | IDEATEST</title>
+<meta name="description" content="Motion Vault — arsip digital ekskul debat IDEATEST">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23240000'/%3E%3Crect x='10' y='4' width='9' height='24' fill='%23AD2831' transform='skewX(-14 4)'/%3E%3C/svg%3E">
+</head>
+<body>
+<header id="site-header"></header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="hero-kicker"><span class="dot"></span>Ekskul Debat · IDEATEST</span>
+    <h1>Motion <span class="l2">Vault</span></h1>
+    <p class="hero-sub">Rumah bagi setiap argumen. Arsip digital ekskul debat <b>IDEATEST</b> —
+       dari bank mosi, bedah mosi, metode A.R.E.L, hingga dokumentasi perjalanan kami di arena debat.</p>
+    <div class="hero-actions">
+      <a href="tentang.html" class="btn btn-red">Jelajahi Vault
+        <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="kontak.html" class="btn btn-ghost">Hubungi Kami</a>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <div class="num">62</div>
+    <div class="lbl">IDEATEST Chapter</div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Argumen<i>///</i>Rebuttal<i>///</i>Weighing<i>///</i>Framing<i>///</i>Evidence<i>///</i>Mosi<i>///</i>POI<i>///</i>Clash<i>///</i></span>
+    <span>Argumen<i>///</i>Rebuttal<i>///</i>Weighing<i>///</i>Framing<i>///</i>Evidence<i>///</i>Mosi<i>///</i>POI<i>///</i>Clash<i>///</i></span>
+  </div>
+</div>
+
+<!-- ================= TENTANG ================= -->
+<section class="section">
+  <div class="bg-word">Debat</div>
+  <div class="container">
+    <span class="section-tag reveal">// Seksi 01</span>
+    <h2 class="section-title reveal d1">Apa Itu <span class="red">Debat?</span> <span class="stroke">Apa Itu IDEATEST?</span></h2>
+    <p class="lead reveal d2">Debat adalah olahraga berpikir — dua tim mempertahankan sisi berbeda dari satu mosi,
+       dengan argumen, bukti, dan cara berpikir kritis. IDEATEST adalah wadahnya.</p>
+    <div class="grid grid-2" style="margin-top:44px">
+      <div class="card reveal">
+        <div class="card-body">
+          <h3 style="color:var(--red-hot)">Debat</h3>
+          <p>Sebuah aktivitas formal untuk mempertahankan pendapat dengan argumen yang logis dan bukti yang relevan.
+             Debat melatih keberanian berbicara, kecepatan berpikir, dan kemampuan melihat isu dari dua sisi.</p>
+        </div>
+      </div>
+      <div class="card reveal d1">
+        <div class="card-body">
+          <h3 style="color:var(--red-hot)">IDEATEST</h3>
+          <p>Ekskul debat yang menjadi rumah bagi para pembicara muda — tempat mengasah retorika,
+             membangun argumen terstruktur dengan A.R.E.L, dan mengumpulkan pengalaman di berbagai kompetisi.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:34px" class="reveal">
+      <a href="tentang.html" class="btn btn-ghost">Baca Selengkapnya
+        <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="stats reveal" id="mv-stats"></div>
+    <p class="muted" style="margin-top:12px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase">
+      * Angka di atas otomatis diambil dari file js/data.js — tinggal ubah di sana.</p>
+  </div>
+</section>
+
+<!-- ================= AREL TEASER ================= -->
+<section class="section section-alt">
+  <div class="bg-word">A·R·E·L</div>
+  <div class="container">
+    <span class="section-tag reveal">// Seksi 02</span>
+    <h2 class="section-title reveal d1">Metode Berpikir <span class="red">A.R.E.L</span></h2>
+    <p class="lead reveal d2">Empat langkah dasar menyusun argumen yang kokoh — dari klaim hingga kaitannya kembali ke mosi.</p>
+    <div class="grid grid-4" style="margin-top:44px">
+      <div class="f-card reveal"><div class="arel-letter">A</div><h3>Assertion</h3><p>Klaim atau pernyataan pendirianmu terhadap mosi. Harus tegas, jelas, dan langsung menjawab isu.</p></div>
+      <div class="f-card reveal d1"><div class="arel-letter">R</div><h3>Reasoning</h3><p>Alasan logis mengapa klaimmu benar — jembatan penalaran yang menghubungkan klaim dengan bukti.</p></div>
+      <div class="f-card reveal d2"><div class="arel-letter">E</div><h3>Evidence</h3><p>Bukti pendukung: data, studi, contoh nyata, atau otoritas yang memperkuat reasoning-mu.</p></div>
+      <div class="f-card reveal d3"><div class="arel-letter">L</div><h3>Link</h3><p>Kaitan kembali ke mosi — jelaskan dampak argumenmu dan kenapa juri harus memihak sisimu.</p></div>
+    </div>
+    <div style="margin-top:34px" class="reveal">
+      <a href="arel.html" class="btn btn-red">Pelajari A.R.E.L
+        <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PEMBICARA TEASER ================= -->
+<section class="section">
+  <div class="bg-word">Teams</div>
+  <div class="container">
+    <span class="section-tag reveal">// Seksi 03</span>
+    <h2 class="section-title reveal d1">Struktur <span class="stroke">Pembicara</span></h2>
+    <p class="lead reveal d2">Format Asian Parliamentary: tiga pembicara per tim, tiga peran berbeda, satu misi — memenangkan mosi.</p>
+    <div class="grid grid-3" style="margin-top:44px">
+      <div class="speaker-card reveal">
+        <div class="speaker-num">01</div>
+        <div class="card-body">
+          <span class="speaker-role">Framing & Kerangka</span>
+          <h3 style="margin-top:8px">Pembicara 1</h3>
+          <p>Membangun definisi, kerangka/model argumen, dan arah besar kasus tim.</p>
+        </div>
+      </div>
+      <div class="speaker-card reveal d1">
+        <div class="speaker-num">02</div>
+        <div class="card-body">
+          <span class="speaker-role">Argumentasi Inti</span>
+          <h3 style="margin-top:8px">Pembicara 2</h3>
+          <p>Menyajikan argumen utama dengan A.R.E.L dan membantah kasus lawan.</p>
+        </div>
+      </div>
+      <div class="speaker-card reveal d2">
+        <div class="speaker-num">03</div>
+        <div class="card-body">
+          <span class="speaker-role">Rebuttal & Weighing</span>
+          <h3 style="margin-top:8px">Pembicara 3</h3>
+          <p>Meruntuhkan argumen lawan, membandingkan (weighing), dan menutup celah.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:34px" class="reveal">
+      <a href="pembicara.html" class="btn btn-ghost">Detail Peran Pembicara
+        <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section" style="padding-top:0">
+  <div class="cta-banner reveal">
+    <h2>Jelajah Arsip Kami</h2>
+    <p>Bank mosi, bedah mosi mendalam, dan dokumentasi perjalanan IDEATEST — semuanya ada di dalam vault.</p>
+    <a href="bank-mosi.html" class="btn btn-ghost" style="color:#fff">Masuk Bank Mosi
+      <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+  </div>
+</section>
+
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
